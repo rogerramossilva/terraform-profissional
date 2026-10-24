@@ -1,0 +1,8 @@
+digraph G {
+  rankdir = "RL";
+  node [shape = rect, fontname = "sans-serif"];
+  "aws_s3_bucket.east" [label="aws_s3_bucket.east"];
+  "aws_s3_bucket.west" [label="aws_s3_bucket.west"];
+  "azurerm_resource_group.lab" [label="azurerm_resource_group.lab"];
+  "google_storage_bucket.lab" [label="google_storage_bucket.lab"];
+}

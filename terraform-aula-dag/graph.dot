@@ -1,0 +1,12 @@
+digraph G {
+  rankdir = "RL";
+  node [shape = rect, fontname = "sans-serif"];
+  "aws_instance.lab" [label="aws_instance.lab"];
+  "aws_security_group.lab" [label="aws_security_group.lab"];
+  "aws_subnet.lab" [label="aws_subnet.lab"];
+  "aws_vpc.lab" [label="aws_vpc.lab"];
+  "aws_instance.lab" -> "aws_security_group.lab";
+  "aws_instance.lab" -> "aws_subnet.lab";
+  "aws_security_group.lab" -> "aws_vpc.lab";
+  "aws_subnet.lab" -> "aws_vpc.lab";
+}
